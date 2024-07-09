@@ -31,7 +31,7 @@ const preguntas = [
         
     },
     {
-        pregunta: "Quants naps costa una càmara (por lo menos nen) nen?",
+        pregunta: "Quants naps costa una càmara nen?",
         opciones: ["33 naps nen", "No se nen, jo les robo, nen", "50 naps com a mínim nen"],
         
     }
@@ -56,6 +56,7 @@ document.querySelectorAll("button").forEach(function(element){
         actualQ++
         if (actualQ < preguntas.length){
             showQuestion(actualQ)
+            nombrePreg()
             
         }
         else {
@@ -63,16 +64,21 @@ document.querySelectorAll("button").forEach(function(element){
             if (respuestas[0] === "Vaig de festa nen") respuestasAcertadas++
             if (respuestas[1] === "Tot el sant dia nen") respuestasAcertadas++
             if (respuestas[2] === "Buga nen") respuestasAcertadas++
-            if (respuestas[3] === "Cap rapat nen 😡") respuestasAcertadas++
+            if (respuestas[3] === "Cap rapat nen") respuestasAcertadas++
             if (respuestas[4] === "7:00 nen") respuestasAcertadas++
             if (respuestas[5] === "Ser dijokei nen") respuestasAcertadas++
             if (respuestas[6] === "Els napos nen") respuestasAcertadas++
             if (respuestas[7] === "50 naps com a mínim nen") respuestasAcertadas++
             
-            document.body.innerHTML = "<h3>Ets un "+ Math.floor(respuestasAcertadas/preguntas.length*100) +"% nen!</h3>" 
+            document.body.innerHTML = "<main><h3 class='nen-final'>🎉 Ets un "+ Math.floor(respuestasAcertadas/preguntas.length*100) +"% nen 🎉</h3></main>" 
 
-        }
+        } 
     }
 })
+
+function nombrePreg(){
+    document.querySelector(".numerin").innerText= actualQ+1
+
+}
 
 
