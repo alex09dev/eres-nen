@@ -1,7 +1,9 @@
+import { RESET_BUTTON } from "./reset.js"
+
 const preguntas = [
     {
         pregunta: "Què faries a Castefa?",
-        opciones: ["Vaig de festa nen", "Visitar el llocs nen", "Matar negres nen"],
+        opciones: ["Vaig de festa nen", "Visitar el llocs nen", "No hi aniria"],
     },
     {
         pregunta: "Te la flipes mandunguilles?",
@@ -70,7 +72,9 @@ document.querySelectorAll("button").forEach(function(element){
             if (respuestas[6] === "Els napos nen") respuestasAcertadas++
             if (respuestas[7] === "50 naps com a mínim nen") respuestasAcertadas++
             
-            document.body.innerHTML = "<main><h3 class='nen-final'>🎉 Ets un "+ Math.floor(respuestasAcertadas/preguntas.length*100) +"% nen 🎉</h3></main>" 
+            document.body.innerHTML = `<main><h3 class='nen-final'>🎉 Ets un  ${Math.floor(respuestasAcertadas/preguntas.length*100) +"% nen 🎉"}</h3>
+            ${RESET_BUTTON}
+            </main>` 
 
         } 
     }
@@ -78,7 +82,6 @@ document.querySelectorAll("button").forEach(function(element){
 
 function nombrePreg(){
     document.querySelector(".numerin").innerText= actualQ+1
-
 }
 
 
