@@ -1,4 +1,4 @@
-import { RESET_BUTTON } from "./reset.js"
+import { RESET_BUTTON } from "../reset.js"
 
 const preguntas = [
     {
@@ -36,6 +36,11 @@ const preguntas = [
         pregunta: "Quants naps costa una càmara nen?",
         opciones: ["33 naps nen", "No se nen, jo les robo, nen", "50 naps com a mínim nen"],
         
+    },
+    {
+        pregunta: "Que et beus pel matí nen?",
+        opciones: ["Una tila nen", "Un cafè nen", "Una cervesa nen"]
+
     }
 
 ]
@@ -71,6 +76,7 @@ document.querySelectorAll("button").forEach(function(element){
             if (respuestas[5] === "Ser dijokei nen") respuestasAcertadas++
             if (respuestas[6] === "Els napos nen") respuestasAcertadas++
             if (respuestas[7] === "50 naps com a mínim nen") respuestasAcertadas++
+            if (respuestas[8] === "Una tila nen") respuestasAcertadas++
             
             document.body.innerHTML = `<main><h3 class='nen-final'>🎉 Ets un  ${Math.floor(respuestasAcertadas/preguntas.length*100) +"% nen 🎉"}</h3>
             ${RESET_BUTTON}
