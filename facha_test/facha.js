@@ -73,7 +73,7 @@ document.querySelectorAll("button").forEach(function(element){
             if (respuestas[2] === "El fusil") respuestasAcertadas++
             if (respuestas[3] === "Cap rapat nen") respuestasAcertadas++
             if (respuestas[4] === "El Vall dels Caiguts nen") respuestasAcertadas++
-            if (respuestas[5] === "Totes nen") respuestasAcertadas++
+            if (respuestas[5] === "Els negres d'Àfrica nen") respuestasAcertadas++
             if (respuestas[6] === "Espanyol nen") respuestasAcertadas++
             if (respuestas[7] === "50 pesetes com a mínim nen") respuestasAcertadas++
             if (respuestas[8] === "No entenc l'anglés nen") respuestasAcertadas++
