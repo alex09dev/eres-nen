@@ -109,3 +109,12 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
+
+.return {
+  width: 100%;
+  max-width: 75ch;
+  margin: auto;
+  a {
+  color: white;
+  }
+}
