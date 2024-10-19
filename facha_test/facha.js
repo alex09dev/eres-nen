@@ -81,7 +81,7 @@ document.querySelectorAll("button").forEach(function(element){
             document.body.innerHTML = `<main><h3 class='nen-final'>🎉 Ets un  ${Math.floor(respuestasAcertadas/preguntas.length*100) +"% facha 🎉"}</h3>
             ${RESET_BUTTON}
             </main>` 
-
+            createConfetti()
         } 
     }
 })
@@ -90,3 +90,16 @@ function nombrePreg(){
     document.querySelector(".numerin").innerText= actualQ+1
 }
 
+function createConfetti(char = "🎊") {
+    var scalar = 3;
+  
+    var pineapple = confetti.shapeFromText({ text: char, scalar });
+  
+    confetti({
+      shapes: [pineapple],
+      scalar,
+      spread: 200,
+      particleCount: 30,
+      startVelocity: 35,
+    });
+  }
