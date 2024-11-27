@@ -2,7 +2,7 @@ import { RESET_BUTTON } from "../reset.js";
 
 const preguntas = [
   {
-    pregunta: "Catalunya és un país?",
+    pregunta: "Catalunya és una nació?",
     opciones: ["Encara no nen", "No, ni ho serà mai nen", "Si que ho és nen"],
   },
   {
@@ -10,40 +10,40 @@ const preguntas = [
     opciones: ["Euskaraz hitz egiten dut umea", "El català nen", "Hablo castellano nen"],
   },
   {
-    pregunta: "Com li dius al teu cotxe?",
-    opciones: ["Catxarro-mòbil nen", "Buga nen", "Terreneitor33 nen"],
+    pregunta: "Quin es el teu menjar preferit?",
+    opciones: ["Sopa de galets nen", "Tortilla de patates nen", "Fideuà"],
   },
   {
-    pregunta: "Quin és el millor pentinat?",
-    opciones: ["Cap rapat nen", "Melena nen", "Se me'n fot el pentinat nen"],
+    pregunta: "Quina bandera representa el teu país?",
+    opciones: ["La estelada nen", "La senyera nen", "La d'Espanya nen"],
   },
   {
-    pregunta: "A quina hora t'aixeiques del sobre?",
-    opciones: ["11:00 nen", "7:00 nen", "Quan tinc ganes de fliparme-la nen"],
+    pregunta: "Quin estil de ball prefereixes?",
+    opciones: ["La salsa nen", "El flamenc nen", "Les sardanes nen"],
   },
   {
-    pregunta: "Quina es la teva verdadera vocació nen?",
-    opciones: ["Ser butaner nen", "Fer calistenia nen", "Ser dijokei nen"],
+    pregunta: "Quin grup musical es mijor?",
+    opciones: ["Els catarres nen", "Estopa nen", "Nirvana nen"],
   },
   {
-    pregunta: "Quina es la moneda del teu país?",
+    pregunta: "Quina ideologia es mijor?",
     opciones: [
-      "Els napos nen",
-      "Els pavos del Fornaik nen",
-      "Les minecoins nen",
+      "La monarquía nen",
+      "La republica nen",
+      "Cap de les dues, sóc anarquista nen",
     ],
   },
   {
-    pregunta: "Quants naps costa una càmara nen?",
+    pregunta: "De quin equip de futbol ets?",
     opciones: [
-      "33 naps nen",
-      "No se nen, jo les robo, nen",
-      "50 naps com a mínim nen",
+      "Del barça nen",
+      "Del madrid nen",
+      "No m'agrada el futbol nen",
     ],
   },
   {
-    pregunta: "Que et beus pel matí nen?",
-    opciones: ["Una tila nen", "Un cafè nen", "Una cervesa nen"],
+    pregunta: "Quan és el dia nacional?",
+    opciones: ["4 de decembre", "12 de octubre nen", "11 de septembre nen"],
   },
 ];
 
@@ -68,15 +68,15 @@ document.querySelectorAll("button").forEach(function (element) {
       nombrePreg();
     } else {
       let respuestasAcertadas = 0;
-      if (respuestas[0] === "Vaig de festa nen") respuestasAcertadas++;
-      if (respuestas[1] === "Tot el sant dia nen") respuestasAcertadas++;
-      if (respuestas[2] === "Buga nen") respuestasAcertadas++;
-      if (respuestas[3] === "Cap rapat nen") respuestasAcertadas++;
-      if (respuestas[4] === "7:00 nen") respuestasAcertadas++;
-      if (respuestas[5] === "Ser dijokei nen") respuestasAcertadas++;
-      if (respuestas[6] === "Els napos nen") respuestasAcertadas++;
-      if (respuestas[7] === "50 naps com a mínim nen") respuestasAcertadas++;
-      if (respuestas[8] === "Una tila nen") respuestasAcertadas++;
+      if (respuestas[0] === "Si que ho és nen") respuestasAcertadas++;
+      if (respuestas[1] === "El català nen") respuestasAcertadas++;
+      if (respuestas[2] === "Sopa de galets nen") respuestasAcertadas++;
+      if (respuestas[3] === "La senyera nen") respuestasAcertadas++;
+      if (respuestas[4] === "Les sardanes nen") respuestasAcertadas++;
+      if (respuestas[5] === "Els catarres nen") respuestasAcertadas++;
+      if (respuestas[6] === "La republica nen") respuestasAcertadas++;
+      if (respuestas[7] === "Del barça nen") respuestasAcertadas++;
+      if (respuestas[8] === "11 de septembre nen") respuestasAcertadas++;
 
       document.body.innerHTML = `<main><h3 class='nen-final'>🎉 Ets un  ${
         Math.floor((respuestasAcertadas / preguntas.length) * 100) + "% indepe 🎉"
