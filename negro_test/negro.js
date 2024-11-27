@@ -38,7 +38,7 @@ const preguntas = [
     opciones: [
       "5 quatrillions de sols peruans nen",
       "No se nen, jo les robo, nen",
-      "Que es això nen?",
+      "1939 pesetes nen",
     ],
   },
   {
@@ -75,7 +75,7 @@ document.querySelectorAll("button").forEach(function (element) {
       if (respuestas[4] === "Pagar? Jo l'ocupo nen") respuestasAcertadas++;
       if (respuestas[5] === "Als skinhead nen") respuestasAcertadas++;
       if (respuestas[6] === "El dírham nen") respuestasAcertadas++;
-      if (respuestas[7] === "No se nen, jo les robo, nen") respuestasAcertadas++;
+      if (respuestas[7] === "1939 pesetes nen") respuestasAcertadas++;
       if (respuestas[8] === "Niqe nen") respuestasAcertadas++;
 
       document.body.innerHTML = `<main><h3 class='nen-final'>🎉 Ets un  ${
