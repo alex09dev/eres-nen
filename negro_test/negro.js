@@ -42,7 +42,7 @@ const preguntas = [
     ],
   },
   {
-    pregunta: "Quina marca de roba utilitzes?",
+    pregunta: "Quina marca de roba fas servir?",
     opciones: ["Adidas nen", "Fred Perry nen", "Niqe nen"],
   },
 ];
