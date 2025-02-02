@@ -22,11 +22,11 @@ const preguntas = [
     opciones: ["La salsa nen", "El flamenc nen", "Les sardanes nen"],
   },
   {
-    pregunta: "Quin grup musical es mijor?",
+    pregunta: "Quin grup musical es millor?",
     opciones: ["Els catarres nen", "Estopa nen", "Nirvana nen"],
   },
   {
-    pregunta: "Quina ideologia es mijor?",
+    pregunta: "Quina ideologia es millor?",
     opciones: [
       "La monarquía nen",
       "La republica nen",
