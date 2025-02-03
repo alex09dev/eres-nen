@@ -10,6 +10,7 @@ const questions = [
     question:
       "La llibertat de negoci és la millor manera pràctica perquè una societat prosperi.",
     effects: { right: 1 },
+    help: "El gobierno debería intervenir en el mercado?"
   },
   {
     id: 1,
@@ -269,8 +270,12 @@ function showQuestion(numero) {
   document.querySelector("h3").innerText = pregunta.question;
 }
 showQuestion(actualQ);
-
-document.querySelectorAll("button").forEach(function (element) {
+const helpButton = document.querySelector("button.help-btn")
+const helpInfo = document.querySelector("span.help-info")
+helpButton.addEventListener("click", () => {
+  helpInfo.innerText = questions[actualQ].help || "No hi ha cap informació disponible.";
+})
+document.querySelectorAll("button.option").forEach(function (element) {
   element.onclick = function () {
     const option = element.innerText;
     if (option === "D'acord") {
@@ -290,7 +295,7 @@ document.querySelectorAll("button").forEach(function (element) {
         auth -= questions[actualQ].effects.auth;
       }
     }
-
+    helpInfo.innerText = ""
     console.log(right, prog, auth);
     actualQ++;
     if (actualQ < questions.length) {
