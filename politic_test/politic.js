@@ -10,85 +10,100 @@ const questions = [
     question:
       "La llibertat de negoci és la millor manera pràctica perquè una societat prosperi.",
     effects: { right: 1 },
-    help: "El gobierno debería intervenir en el mercado?"
+    help: "El govern no hauría d'intervenir al mercat?"
   },
   {
     id: 1,
     question:
       "La caritat és una millor manera d’ajudar els necessitats que el benestar social.",
     effects: { right: 1 },
+    help: "Caritat = ONG."
   },
   {
     id: 2,
     question:
       "Els salaris sempre són justos, ja que els empresaris saben millor quant val la feina d’un treballador.",
     effects: { right: 1 },
+    help: "Els salaris són sempre justos."
   },
   {
     id: 3,
     question: 'És "naturalesa humana" ser cobdiciós.',
     effects: { right: 1 },
+    help: "Ser cobdiciós no es una caracteristica unica d'algunes persones, si no de tots els humans."
   },
   {
     id: 4,
     question:
       '"Explotació" és un terme antiquat, ja que les lluites del capitalisme del segle XIX ja no existeixen.',
     effects: { right: 1 },
+    help: "A la actualitat ningú que visqui en un estat capitalista, és explotat laboralment."
   },
   {
     id: 5,
     question: "El comunisme és un ideal que mai podrà funcionar a la pràctica.",
     effects: { right: 1 },
+    help: "El comunisme no funciona a la pràctica."
   },
   {
     id: 6,
     question:
       "Imposar impostos als rics és una mala idea, la societat estaria millor sense això.",
     effects: { right: 1 },
+    help: "Els rics no haurien de pagar impostos."
+
   },
   {
     id: 7,
     question: "Com més treballes, més avances en l’escala social.",
     effects: { right: 1 },
+    help: "Quant més treballis, més prestigi obtens."
   },
   {
     id: 8,
     question:
       "Les organitzacions i corporacions no són de fiar i necessiten ser regulades pel govern.",
     effects: { right: -1 },
+    help: "No ens podem fiar de les organitzacions privades, per aixo les ha de controlar el govern."
   },
   {
     id: 9,
     question:
       "Un govern que proveeix per a tothom és una idea inherentment bona.",
     effects: { right: -1 },
+    help: "Un govern que subvenciona a tothom es una molt bona idea."
   },
   {
     id: 10,
     question:
       "El sistema de benestar actual hauria d’ampliar-se per combatre encara més la desigualtat.",
     effects: { right: -1 },
+    help:" No hi ha suficient igualtat, hem d'aconseguir-ne més a través d'impostos."
   },
   {
     id: 11,
     question:
       "La terra no hauria de ser una mercaderia que es pugui comprar i vendre.",
     effects: { right: -1 },
+    help: "No s'haurien de poder comprar o vendre terres."
   },
   {
     id: 12,
     question: "Tota la indústria i els bancs haurien de ser nacionalitzats.",
     effects: { right: -1 },
+    help: "Els bancs i les fabriques haurien de servir només al país d'origen"
   },
   {
     id: 13,
     question: "La classe és la divisió principal de la societat.",
     effects: { right: -1 },
+    help: "La societat està dividida per riquessa."
   },
   {
     id: 14,
     question: "La desigualtat econòmica és massa alta al món.",
     effects: { right: -1 },
+    help: "La diferencia ecomomica entre un ric i un pobre és massa gran."
   },
   {
     id: 15,
@@ -101,6 +116,7 @@ const questions = [
     question:
       "Les figures d’autoritat, si són moralment correctes, són una bona cosa per a la societat.",
     effects: { auth: 1 },
+    help: "Figura d'autoritat = Dictador/Antidemocràtic"
   },
   {
     id: 17,
@@ -117,12 +133,14 @@ const questions = [
     id: 19,
     question: "La societat necessita estructura i burocràcia per funcionar.",
     effects: { auth: 1 },
+    help: "La societat necessita ordre per funcionar"
   },
   {
     id: 20,
     question:
-      "Els documents d’identificació obligatoris haurien d’usar-se per garantir la seguretat pública.",
+      "Els documents d’identificació obligatoris (DNI) haurien d’usar-se per garantir la seguretat pública.",
     effects: { auth: 1 },
+
   },
   {
     id: 21,
@@ -150,6 +168,7 @@ const questions = [
     id: 25,
     question: "La nul·lificació del jurat hauria de ser legal.",
     effects: { auth: -1 },
+    help: "Un jutge pot decidir no castigarte, tot hi haver fet un crim."
   },
   {
     id: 26,
@@ -344,7 +363,7 @@ document.querySelectorAll("button.option").forEach(function (element) {
         ctx.fillText("Prog / Con Axis (z): " + prog, 725, 1525);
         ctx.textAlign = "right";
         ctx.font = "60px Montserrat";
-        ctx.fillText("SapplyValues.github.io", 1820, 1560);
+        ctx.fillText("nen.pages.dev", 1820, 1560);
 
         document.getElementById("banner").src = c.toDataURL();
       };
